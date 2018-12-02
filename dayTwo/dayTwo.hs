@@ -1,7 +1,7 @@
 import Data.List (sort, group)
 
 main :: IO ()
-main = partTwo
+main = partOne >> partTwo
 
 partOne :: IO ()
 partOne = interact (show . partOne' . lines)

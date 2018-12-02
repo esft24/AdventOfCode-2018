@@ -1,6 +1,8 @@
 import qualified Data.Set as S
 import qualified Data.Map as M
 import Debug.Trace
+main :: IO ()
+main = partOne >> partTwo
 
 partOne :: IO ()
 partOne = interact (show . sum . (map reallyRead) . lines)
