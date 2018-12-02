@@ -1,5 +1,5 @@
 main :: IO ()
-main = partTwo
+main = partOne >> partTwo
 
 partOne :: IO ()
 partOne = interact (show . sum . (map reallyRead) . lines)
